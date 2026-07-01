@@ -1,11 +1,13 @@
 // Contenuti del sito — testi reali raccolti dal profilo Instagram
-// @dematteo_allabrace. Le voci segnate con TODO vanno confermate/sostituite
-// dal cliente (indirizzo, telefono, link prenotazioni, menu, eventi).
+// @dematteo_allabrace e dall'HTML del sito attuale dematteoallabrace.it
+// (fornito dal cliente). Le voci rimaste segnate con TODO vanno
+// confermate/sostituite dal cliente (link prenotazioni, eventi, menu).
 
 export const nav = [
   { label: 'La Storia', href: '#storia' },
   { label: 'Riconoscimenti', href: '#riconoscimenti' },
   { label: 'La Materia Prima', href: '#materia-prima' },
+  { label: 'Esperienze', href: '#esperienze' },
   { label: 'Atmosfera', href: '#atmosfera' },
   { label: 'Galleria', href: '#galleria' },
   { label: 'Contatti', href: '#contatti' },
@@ -18,16 +20,22 @@ export const hero = {
   cta: { primary: 'Prenota un tavolo', secondary: 'Scopri la storia' },
 }
 
+export const mission = {
+  quote:
+    'Non è mai solo una bistecca è il nostro slogan, uno stile di vita, una missione da compiere.',
+  body: 'Divulghiamo la cultura della bistecca alla brace, creando vere e proprie esperienze, selezionando le migliori carni al mondo, offrendo un servizio attento e curato, in un ambiente intimo e raffinato, in cui ogni ospite si sentirà unico e speciale, eccedendo sempre le sue aspettative. Questo è de Matteo alla Brace.',
+}
+
 export const storia = {
   eyebrow: 'La Storia',
   title: 'Due fratelli, un fuoco, una promessa',
   paragraphs: [
     'La storia della braceria dei fratelli de Matteo a Maddaloni, in provincia di Caserta, è una storia di lotte, conquiste e "bistecche" lanciate contro ogni ostacolo.',
-    'Umberto e Daniele de Matteo nascono in una famiglia di macellai: per oltre 70 anni, ogni mattina, qualcuno della famiglia de Matteo ha aperto la serranda di una macelleria. Da quella tradizione è nato il sogno di una steakhouse di livello, in una terra famosa per pizza e mare.',
+    'De Matteo alla Brace è l’evoluzione di una famiglia di macellai: Umberto e Daniele rappresentano la quarta generazione, passando per la prima volta dalle macellerie alla brace, alla ristorazione. Per oltre 70 anni, ogni mattina, qualcuno della famiglia de Matteo ha aperto la serranda di una macelleria.',
     'Dopo 7 mesi dall’apertura rischiavamo di chiudere. Oggi siamo tra le migliori 50 Steakhouse d’Italia.',
   ],
   stats: [
-    { value: '1979', label: 'Macelleria di famiglia' },
+    { value: '4ª Gen.', label: 'Famiglia di macellai' },
     { value: '7', label: 'Anni di Braceria' },
     { value: 'Top 50', label: 'Steakhouse d’Italia 2026' },
   ],
@@ -73,6 +81,36 @@ export const materiaPrima = {
   ],
 }
 
+export const esperienze = {
+  eyebrow: 'Experience',
+  title: 'Percorsi su misura, per ogni occasione',
+  intro:
+    'Menu degustazione, tagli rari e serate a tema: un percorso sviluppato a 360° sull’impreziosire il palato e creare il ricordo.',
+  items: [
+    {
+      title: 'Filetti Esotici',
+      subtitle: 'L’essenza dei sapori',
+      body: 'Canguro, coccodrillo e struzzo: tagli rari selezionati per chi vuole andare oltre il classico.',
+    },
+    {
+      title: 'Percorsi Degustazione',
+      subtitle: 'Gold · Premium · Luxury',
+      body: 'Menu degustazione come "4 Portate" e "Sfumature di Wagyu", per un’esperienza completa a tavola.',
+    },
+    {
+      title: 'Martedì Romantico',
+      subtitle: 'L’evento più richiesto in Campania',
+      body: 'Una serata a tema pensata per le coppie: uno degli appuntamenti fissi più richiesti della Braceria.',
+    },
+    {
+      title: 'Butter Aged',
+      subtitle: 'Frollatura nel burro',
+      body: 'Una frollatura particolare nel burro, per profumi e consistenze che vanno oltre il dry aging classico.',
+    },
+  ],
+  cta: 'Scopri le esperienze',
+}
+
 export const atmosfera = {
   eyebrow: 'Atmosfera',
   title: 'Il fuoco vivo, la sala, la brace',
@@ -91,12 +129,12 @@ export const galleria = {
 export const contatti = {
   eyebrow: 'Contatti',
   title: 'Vi aspettiamo alla brace',
-  address: 'Maddaloni (CE)', // TODO: indirizzo completo da confermare
+  address: 'Via Mastrantuono 48, Maddaloni (CE)',
   hoursLabel: 'Aperti tutti i giorni a cena',
   hoursSub: 'Chiusi a pranzo',
-  phone: '+39 000 000 0000', // TODO: numero reale
-  email: 'info@dematteoallabrace.it', // TODO: email reale
-  bookingUrl: '#', // TODO: link prenotazione (TheFork / WhatsApp)
+  phone: '+39 0823 436819',
+  email: 'info@dematteoallabrace.it',
+  bookingUrl: 'tel:+390823436819', // TODO: sostituire con link diretto (TheFork / WhatsApp) se disponibile
   instagramUrl: 'https://www.instagram.com/dematteo_allabrace/',
 }
 
