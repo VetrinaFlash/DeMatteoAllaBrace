@@ -53,10 +53,14 @@ forniti). Sono foto a bassa risoluzione: **vanno sostituite con le foto/video uf
 definizione** del cliente per un risultato definitivo — basta sostituire i file con lo stesso nome
 in quella cartella.
 
-### Dati ancora da confermare (segnati con `TODO` in `src/content.ts`)
+### Dati reali confermati
 
-- Indirizzo completo
-- Numero di telefono / WhatsApp
-- Email
-- Link di prenotazione (es. TheFork, WhatsApp Business)
-- Sezione Eventi (attualmente assente dal sito: aggiungere quando saranno disponibili i dettagli)
+Indirizzo, telefono, email e link di prenotazione (Pienissimo) sono stati verificati dal codice
+sorgente del sito attuale dematteoallabrace.it e sono già inseriti in `src/content.ts`.
+
+### Ancora da fare
+
+- Sostituire le foto in `src/assets/images/` con foto/video ufficiali ad alta definizione (quelle
+  attuali sono estratte dagli screenshot Instagram forniti, quindi a bassa risoluzione).
+- Prezzi e dettagli completi dei "Percorsi Degustazione" (Gold/Premium/Luxury) e degli eventi, se
+  si vogliono mostrare oltre alla presentazione già presente in home.

@@ -15,8 +15,8 @@ export const nav = [
 
 export const hero = {
   eyebrow: 'Maddaloni · Caserta',
-  tagline: '7 anni di passione, ricerca e dedizione.',
-  subline: 'Non è mai solo una bistecca.',
+  headline: 'Non è mai solo una bistecca.',
+  supporting: '7 anni di passione, ricerca e dedizione.',
   cta: { primary: 'Prenota un tavolo', secondary: 'Scopri la storia' },
 }
 
@@ -134,14 +134,6 @@ export const contatti = {
   hoursSub: 'Chiusi a pranzo',
   phone: '+39 0823 436819',
   email: 'info@dematteoallabrace.it',
-  bookingUrl: 'tel:+390823436819', // TODO: sostituire con link diretto (TheFork / WhatsApp) se disponibile
+  bookingUrl: 'https://forms.pienissimo.com/?hash=2CMV7IFBVgJGMZjste4Cw4LA1pz5zTdh&id=Fl7E3J',
   instagramUrl: 'https://www.instagram.com/dematteo_allabrace/',
-}
-
-export const events = {
-  eyebrow: 'Eventi',
-  title: 'Serate a tema ed eventi speciali',
-  // TODO: elenco eventi reale da inserire (cene a tema, degustazioni wagyu, serate live, ecc.)
-  placeholder:
-    'Stiamo raccogliendo i dettagli dei prossimi eventi da inserire in questa sezione: cene a tema, degustazioni e serate speciali della Braceria.',
 }

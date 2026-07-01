@@ -51,7 +51,7 @@ export default function Contatti() {
           </div>
 
           <Reveal delay={0.3} className="mt-12 flex flex-col sm:flex-row gap-4">
-            <a href={contatti.bookingUrl} className="btn-gold">
+            <a href={contatti.bookingUrl} target="_blank" rel="noreferrer" className="btn-gold">
               Prenota un tavolo
             </a>
             <a href={contatti.instagramUrl} target="_blank" rel="noreferrer" className="btn-outline">

@@ -1,81 +1,81 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/jost-300.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Jost';
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/jost-400.woff2') format('woff2');
+  src: url('/fonts/manrope-400.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Jost';
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/jost-500.woff2') format('woff2');
+  src: url('/fonts/manrope-500.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Jost';
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/jost-600.woff2') format('woff2');
+  src: url('/fonts/manrope-600.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Jost';
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/jost-700.woff2') format('woff2');
+  src: url('/fonts/manrope-700.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/cormorant-garamond-300.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Prompt';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/cormorant-garamond-400.woff2') format('woff2');
+  src: url('/fonts/prompt-400.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Prompt';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/cormorant-garamond-500.woff2') format('woff2');
+  src: url('/fonts/prompt-500.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Prompt';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/cormorant-garamond-600.woff2') format('woff2');
+  src: url('/fonts/prompt-600.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/prompt-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/libre-caslon-text-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/libre-caslon-text-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/cormorant-garamond-400-italic.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/cormorant-garamond-500-italic.woff2') format('woff2');
+  src: url('/fonts/libre-caslon-text-400-italic.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Alex Brush';
@@ -96,9 +96,10 @@
   --color-cream: #f4ede1;
   --color-line: #d9b25c40;
 
-  --font-display: 'Cormorant Garamond', serif;
+  --font-display: 'Libre Caslon Text', serif;
   --font-script: 'Alex Brush', cursive;
-  --font-sans: 'Jost', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+  --font-accent: 'Prompt', sans-serif;
 }
 
 html {
@@ -142,6 +143,7 @@ body {
   }
 
   .tracked {
+    font-family: var(--font-accent);
     letter-spacing: 0.28em;
   }
 
@@ -196,12 +198,13 @@ body {
     align-items: center;
     gap: 0.6rem;
     padding: 0.9rem 2.1rem;
-    font-family: var(--font-sans);
+    font-family: var(--font-accent);
     font-size: 0.78rem;
     letter-spacing: 0.24em;
     text-transform: uppercase;
     color: var(--color-noir);
     background: linear-gradient(120deg, var(--color-gold-soft), var(--color-gold));
+    overflow: hidden;
     transition: transform 0.4s cubic-bezier(.2,.7,.2,1), box-shadow 0.4s ease, background 0.4s ease;
   }
   .btn-gold:hover {
@@ -215,17 +218,46 @@ body {
     align-items: center;
     gap: 0.6rem;
     padding: 0.85rem 2rem;
-    font-family: var(--font-sans);
+    font-family: var(--font-accent);
     font-size: 0.78rem;
     letter-spacing: 0.24em;
     text-transform: uppercase;
     color: var(--color-cream);
     border: 1px solid var(--color-line);
+    overflow: hidden;
     transition: border-color 0.4s ease, background 0.4s ease, transform 0.4s ease;
   }
   .btn-outline:hover {
     border-color: var(--color-gold);
     background: rgba(217, 178, 92, 0.08);
     transform: translateY(-2px);
+  }
+
+  .btn-gold::after,
+  .btn-outline::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.55) 50%, transparent 60%);
+    transform: translateX(-140%);
+    transition: transform 0.7s cubic-bezier(.2,.7,.2,1);
+    pointer-events: none;
+  }
+  .btn-gold:hover::after,
+  .btn-outline:hover::after {
+    transform: translateX(140%);
+  }
+
+  .spotlight {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(480px circle at var(--mx, 50%) var(--my, 50%), rgba(217, 178, 92, 0.16), transparent 60%);
+  }
+  .spotlight.is-active {
+    opacity: 1;
   }
 }

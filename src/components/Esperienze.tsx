@@ -30,7 +30,7 @@ export default function Esperienze() {
         </div>
 
         <Reveal delay={0.3} className="mt-14 flex justify-center">
-          <a href={contatti.bookingUrl} className="btn-gold">
+          <a href={contatti.bookingUrl} target="_blank" rel="noreferrer" className="btn-gold">
             {esperienze.cta}
           </a>
         </Reveal>

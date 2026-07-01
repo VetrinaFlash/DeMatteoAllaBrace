@@ -46,7 +46,7 @@ export default function Nav() {
             ))}
           </nav>
 
-          <a href={contatti.bookingUrl} className="btn-gold hidden lg:inline-flex">
+          <a href={contatti.bookingUrl} target="_blank" rel="noreferrer" className="btn-gold hidden lg:inline-flex">
             Prenota
           </a>
 
@@ -95,6 +95,8 @@ export default function Nav() {
                 ))}
                 <motion.a
                   href={contatti.bookingUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.08 * nav.length, duration: 0.5 }}
