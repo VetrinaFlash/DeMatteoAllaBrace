@@ -1,0 +1,29 @@
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import Storia from './components/Storia'
+import Riconoscimenti from './components/Riconoscimenti'
+import MateriaPrima from './components/MateriaPrima'
+import Atmosfera from './components/Atmosfera'
+import Galleria from './components/Galleria'
+import Contatti from './components/Contatti'
+import Footer from './components/Footer'
+
+function App() {
+  return (
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <Storia />
+        <Riconoscimenti />
+        <MateriaPrima />
+        <Atmosfera />
+        <Galleria />
+        <Contatti />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+export default App
