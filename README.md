@@ -25,11 +25,16 @@ I file pronti per il deploy vengono generati in `dist/`.
 
 1. Cloudflare Dashboard → Workers & Pages → Create → Pages → Connect to Git.
 2. Seleziona questo repository e il branch da pubblicare.
-3. Impostazioni build:
+3. In **Settings → Builds & deployments** imposta:
    - Framework preset: `Vite`
    - Build command: `npm run build`
    - Build output directory: `dist`
 4. Deploy. Ogni push al branch farà una nuova build automatica.
+
+> Nota: non usare un file `wrangler.toml` in questo repo per configurare la build — i progetti
+> Pages collegati a Git **non** supportano una sezione `[build]` in `wrangler.toml` (Cloudflare
+> risponde con l'errore "Configuration file for Pages projects does not support build"). Il
+> comando di build va impostato solo dalla dashboard, come sopra.
 
 **Opzione B — deploy manuale da terminale**
 
